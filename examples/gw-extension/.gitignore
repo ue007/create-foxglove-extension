@@ -1,0 +1,19 @@
+# dependencies
+/node_modules
+
+# System Files
+.DS_Store
+Thumbs.db
+[Dd]esktop.ini
+
+# Links
+*.lnk
+
+# Logs
+npm-debug.log
+
+# Block build
+/dist
+
+# Texts
+*.txt

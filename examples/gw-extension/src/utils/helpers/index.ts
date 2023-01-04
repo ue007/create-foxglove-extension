@@ -1,0 +1,1 @@
+export { getSpeedData } from './getSpeedData'

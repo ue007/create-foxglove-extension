@@ -1,0 +1,47 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist",
+        "lib": ["DOM", "DOM.Iterable", "ESNext", "ScriptHost"],
+
+        "allowUnreachableCode": false,
+        "allowUnusedLabels": false,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitReturns": true,
+        "noUncheckedIndexedAccess": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "isolatedModules": false,
+        "strictBindCallApply": true,
+        "strictFunctionTypes": true,
+        "strictNullChecks": true,
+        "noEmitOnError": true,
+        "removeComments": true,
+        "forceConsistentCasingInFileNames": true,
+
+        "baseUrl": "./",
+        "module": "CommonJS",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+
+        "paths": {
+            "panel": ["src/panel"],
+            "components/*": ["src/components/*"],
+            "shared/*": ["src/shared/*"],
+            "utils/*": ["src/utils/*"],
+        },
+
+        "types": [
+            "node",
+            "webpack-env",
+            "react",
+            "react-dom"
+        ],
+
+        "jsx": "react",
+        "target": "ESNext",
+    },
+
+    "include": ["src/**/*", "./config.ts"],
+    "exclude": ["node_modules", "dist", "testCode", "src/components/**/*.stories.tsx"]
+}
